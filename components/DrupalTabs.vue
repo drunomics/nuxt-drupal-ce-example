@@ -45,32 +45,30 @@ export default {
   padding: 0;
   list-style: none;
   border-bottom: 1px solid #dedede;
-
-  a {
-    display: inline-block;
-    text-transform: uppercase;
-    margin-bottom: -1px;
-    margin-right: -1px;
-    padding: 0.3em 0.8em;
-    font-size: 0.8em;
-    text-decoration: none;
-    color: #888;
-    border: 1px solid transparent;
-  }
-
-  a:hover {
-   border-bottom-color: #444;
-  }
-
-  .visually-hidden {
-    position: absolute;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-  }
 }
+
+a {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0.3em 0.8em;
+  text-decoration: none;
+  color: #888;
+  border: 1px solid transparent;
+}
+
+a:hover {
+ border-bottom-color: #444;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
 </style>
