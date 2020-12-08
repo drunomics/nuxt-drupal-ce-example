@@ -27,7 +27,7 @@ An example project showing the usage of the [Nuxt.js Drupal-CE module](https://g
 $ npm install
 
 # serve with hot reload at localhost:3000
-$ PROXY_BASE_URL=http://drupal.localdev.space npm run dev
+$ DRUPAL_BASE_URL=http://yourdrupal.example.com npm run dev
 
 # build for production and launch server
 $ npm run build

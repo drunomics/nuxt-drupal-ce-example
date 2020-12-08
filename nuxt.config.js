@@ -1,7 +1,7 @@
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'frontend',
+    title: 'Lupus Nuxt.js Drupal Stack - Example',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -31,13 +31,8 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    'nuxtjs-drupal-ce',
-    '@nuxtjs/proxy'
+    'nuxtjs-drupal-ce'
   ],
-
-  'nuxtjs-drupal-ce': {
-    baseURL: 'http://example.d9playground.localdev.space:3000/api'
-  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
@@ -46,11 +41,5 @@ export default {
   // Enable axios debugging when useful.
   axios: {
     debug: false
-  },
-
-  // In order to make dev-mode work, forward /api requests to our base-url
-  // always. This is needed to avoid issues with CORS.
-  proxy: {
-    '/api': { target: process.env.PROXY_BASE_URL, pathRewrite: { '^/api': '' } }
   }
 }
