@@ -1,36 +1,21 @@
 <template>
-  <main
-    role="main"
-    class="page"
-  >
-    <drupal-tabs v-if="this.$drupal.$currentPage.localTasks" :tabs="this.$drupal.$currentPage.localTasks" />
-    <component
-      :is="contentComponent()"
-      ref="content"
-    />
+  <main role="main">
+    <drupal-tabs v-if="page.localTasks" :tabs="page.localTasks" />
+    <component :is="$drupal.contentComponent()" />
   </main>
 </template>
 
 <script>
 
 export default {
-  name: 'PageDefault',
   async asyncData ({ route, $drupal }) {
-    return {
-      page: await $drupal.fetchPage(route.path)
-    }
-  },
-  methods: {
-    contentComponent () {
-      return { name: 'DrupalContent', template: '<div>' + this.$drupal.$currentPage.content + '</div>' }
-    }
+    return { page: await $drupal.fetchPage(route.path) }
   },
   head () {
-    const page = this.$drupal.$currentPage
     return {
-      title: page.title,
-      meta: page.metadata.meta,
-      link: page.metadata.link
+      title: this.page.title,
+      meta: this.page.metadata.meta,
+      link: this.page.metadata.link
     }
   }
 }

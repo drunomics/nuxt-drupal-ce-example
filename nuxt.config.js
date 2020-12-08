@@ -36,7 +36,7 @@ export default {
   ],
 
   'nuxtjs-drupal-ce': {
-    baseURL: 'http://localhost:3000/api'
+    baseURL: 'http://example.d9playground.localdev.space:3000/api'
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
