@@ -25,6 +25,10 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  padding: 1em;
+}
+
 *,
 *::before,
 *::after {
