@@ -1,4 +1,4 @@
-# frontend
+# Lupus Nuxt.js Drupal stack - Frontend example
 
 ## Build Setup
 

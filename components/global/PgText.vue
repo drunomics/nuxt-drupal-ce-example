@@ -3,12 +3,12 @@
     <h3 v-if="$slots.title" class="title">
       <slot name="title" />
     </h3>
-    <slot name="default" />
+    <slot name="text" />
   </div>
 </template>
 
 <style lang="css" scoped>
   .paragraph-text {
-    margin: 0 auto;
+    margin: 1em;
   }
 </style>
