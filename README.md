@@ -1,5 +1,8 @@
 # Lupus Nuxt.js Drupal stack - Frontend example
 
+An example project showing the usage of the [Nuxt.js Drupal-CE module](https://github.com/drunomics/nuxt-module-drupal-ce).
+
+
 ## Pre-requisites
 
 * A [Drupal](https://drupal.org) backend with the
@@ -24,5 +27,5 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out
-[Nuxt.js Drupal-CE module](https://github.com/drunomics/nuxt-module-drupal-ce)
-[Nuxt.js docs](https://nuxtjs.org).
+* [Nuxt.js Drupal-CE module](https://github.com/drunomics/nuxt-module-drupal-ce)
+* [Nuxt.js docs](https://nuxtjs.org).
