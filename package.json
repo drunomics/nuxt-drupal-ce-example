@@ -1,5 +1,5 @@
 {
-  "name": "Lupus Nuxt.js Drupal stack - Frontend example",
+  "name": "frontend-example",
   "version": "1.0.0",
   "private": true,
   "scripts": {

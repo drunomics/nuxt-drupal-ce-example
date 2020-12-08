@@ -35,6 +35,10 @@ export default {
     '@nuxtjs/proxy'
   ],
 
+  'nuxtjs-drupal-ce': {
+    baseURL: 'http://localhost:3000/api'
+  },
+
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
   },
@@ -45,8 +49,8 @@ export default {
   },
 
   // In order to make dev-mode work, forward /api requests to our base-url
-  // always. This is needed to make path-relative images load.
+  // always. This is needed to avoid issues with CORS.
   proxy: {
-    '/api': { target: 'http://example.d9playground.localdev.space', pathRewrite: {'^/api': ''}  }
+    '/api': { target: process.env.PROXY_BASE_URL, pathRewrite: { '^/api': '' } }
   }
 }
