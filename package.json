@@ -11,16 +11,16 @@
     "lint": "npm run lint:js"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.12.4",
-    "core-js": "^3.8.1",
-    "nuxt": "^2.14.12",
+    "@nuxtjs/axios": "^5.13.1",
+    "core-js": "^3.9.1",
+    "nuxt": "^2.15.3",
     "nuxtjs-drupal-ce": "^1.0.0-alpha4"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",
     "@nuxtjs/eslint-module": "^2.0.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.16.0",
+    "eslint": "^7.22.0",
     "eslint-plugin-nuxt": "^1.0.0"
   }
 }
