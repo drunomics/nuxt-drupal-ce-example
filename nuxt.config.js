@@ -34,6 +34,10 @@ export default {
     'nuxtjs-drupal-ce'
   ],
 
+  'nuxtjs-drupal-ce': {
+    baseURL: 'http://example.d9playground.localdev.space'
+  },
+
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
   },
