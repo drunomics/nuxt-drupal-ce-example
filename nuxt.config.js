@@ -1,3 +1,5 @@
+const DRUPAL_BASE_URL = process.env.DRUPAL_BASE_URL || 'http://example.d9playground.localdev.space'
+
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -35,7 +37,9 @@ export default {
   ],
 
   'nuxtjs-drupal-ce': {
-    baseURL: 'http://example.d9playground.localdev.space'
+    baseURL: DRUPAL_BASE_URL,
+    addRequestFormat: false,
+    useProxy: false
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

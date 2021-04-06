@@ -1,10 +1,10 @@
 <template>
   <div class="paragraph-quote">
     <blockquote>
-      <slot name="text" />
+      <slot />
     </blockquote>
     <div class="author">
-      {{ authorName }}
+      {{ author }}
     </div>
   </div>
 </template>
@@ -24,7 +24,10 @@
 <script>
 export default {
   props: {
-    'author-name': String
+    author: {
+      type: String,
+      default: ''
+    }
   }
 }
 </script>

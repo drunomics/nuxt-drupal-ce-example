@@ -1,14 +1,17 @@
 <template>
-  <div class="node">
-    <h2>{{ title }}</h2>
-    <slot name="paragraphs" />
+  <div class="node" :class="`node--${type}`">
+    <slot />
   </div>
 </template>
 
 <script>
 export default {
+  name: 'Node',
   props: {
-    title: String
+    type: {
+      type: String,
+      required: true
+    }
   }
 }
 </script>
