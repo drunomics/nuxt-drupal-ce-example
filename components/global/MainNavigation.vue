@@ -27,6 +27,12 @@ export default {
   name: 'MainNavigation',
   computed: {
     ...mapState('drupalCe', ['menus'])
+  },
+  mounted () {
+    // Fetch menu in SPA mode. Should be filled already in SSR mode, so this is a fallback.
+    if (!this.menus.main.length) {
+      this.$drupal.fetchMenu('main')
+    }
   }
 }
 </script>
