@@ -1,6 +1,7 @@
 <template>
-  <div class="node" :class="`node--${type}`">
-    <slot />
+  <div class="node">
+    <h2>{{ title }}</h2>
+    <slot name="paragraphs" />
   </div>
 </template>
 
@@ -8,9 +9,8 @@
 export default {
   name: 'Node',
   props: {
-    type: {
-      type: String,
-      required: true
+    title: {
+      type: String
     }
   }
 }

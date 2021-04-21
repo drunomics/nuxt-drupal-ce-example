@@ -1,7 +1,7 @@
 <template>
   <div class="paragraph-quote">
     <blockquote>
-      <slot />
+      <slot name="text" />
     </blockquote>
     <div class="author">
       {{ author }}
