@@ -1,8 +1,6 @@
 <template>
   <div class="paragraph-text">
-    <h3 v-if="$slots.title" class="title">
-      <slot name="title" />
-    </h3>
+    <h2>{{ title }}</h2>
     <slot name="text" />
   </div>
 </template>
@@ -12,3 +10,13 @@
     margin: 1em;
   }
 </style>
+
+<script>
+export default {
+  props: {
+    title: {
+      type: String
+    }
+  }
+}
+</script>

@@ -4,7 +4,7 @@
       <slot name="text" />
     </blockquote>
     <div class="author">
-      {{ authorName }}
+      {{ author }}
     </div>
   </div>
 </template>
@@ -24,7 +24,10 @@
 <script>
 export default {
   props: {
-    'author-name': String
+    author: {
+      type: String,
+      default: ''
+    }
   }
 }
 </script>

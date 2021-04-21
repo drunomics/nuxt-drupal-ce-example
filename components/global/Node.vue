@@ -7,8 +7,11 @@
 
 <script>
 export default {
+  name: 'Node',
   props: {
-    title: String
+    title: {
+      type: String
+    }
   }
 }
 </script>

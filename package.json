@@ -14,7 +14,7 @@
     "@nuxtjs/axios": "^5.13.1",
     "core-js": "^3.9.1",
     "nuxt": "^2.15.3",
-    "nuxtjs-drupal-ce": "^1.0.0-alpha5"
+    "nuxtjs-drupal-ce": "^1.0.0-alpha7"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",
